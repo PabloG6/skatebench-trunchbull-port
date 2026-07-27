@@ -26,6 +26,19 @@ Benchmark authors do not install a Trunchbull SDK or CLI. Ports use plain
 JavaScript or TypeScript configuration and declarative evaluators. Tool-bearing
 ports may use Vercel AI SDK tool objects.
 
+## Publishing a port
+
+In Trunchbull's benchmark publishing screen, enter this repository URL and the
+port's config path. For SkateBench:
+
+```text
+Repository: https://github.com/PabloG6/skatebench-trunchbull-port
+Config path: benchmarks/skatebench/benchmark.config.ts
+```
+
+Tool, eval, and data paths are resolved relative to the selected config file,
+which lets this repository hold multiple independent ports.
+
 ## Adding a port
 
 1. Create `benchmarks/<benchmark-name>/`.
